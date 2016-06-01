@@ -1,0 +1,197 @@
+
+include mixin/mixin.jade
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Examen
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700,800' rel='stylesheet' type='text/css'>
+		link(rel='stylesheet', type='text/css', href='assets/css/bootstrap.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/elegant.css')
+	body
+		main.hero
+			.opaco
+				.container
+					.flexible.row
+						.col-sm-4
+							img(src='assets/images/w-logo.jpg')
+						.col-sm-8
+							ul.text-right.nav-bar
+								a(href="") HOME
+								a(href="") SERVICES
+								a(href="") ABOUT
+								a(href="") PORTFOLIO
+								a(href="") TEAM
+								a(href="") TESTIMONIAL
+								a(href="") PRICING
+								a(href="") CONTACT
+					.contenedor
+						.text-hero.text-center
+							h1 Stand Out From The Crowd
+							p For photogrhaper and freelancer who want to exclusively showcase their products.
+		section.main-1
+			.container
+				.row
+					.col-sm-6
+						img.w-100(src="assets/images/p15.jpg")
+					.col-sm-6
+						.pl-5.service
+							+sub-title("Services","We Provide") 
+							hr.separador-one
+							p Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+							+media("PSD TEMPLATE DESIGN","online-store15")
+							+media("GRAPHICS DESIGN","mug16")
+							+media("PHOTOGRAPHY","photography88")
+		main.hero-two
+			.opaco
+				.container
+					.row
+						.col-sm-6.white
+							+sub-title("Welcome To","W Studio")
+							hr.separador-one
+							p Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+
+						.col-sm-6
+							.video.pd-20
+								iframe(src="assets/images/video.mp4")
+		section.main-4
+			.container
+				.row
+					+sub-title("Meet The","Team")
+					hr.separador-one
+					+median-img("member7")
+					+media-conten("NETHANEL GILROY","Founder & CEO")
+					+median-img("member8")
+					+media-conten("NAREK ROUBEN","Marketing Director")
+				.row
+					+media-conten("SAMANTHA MILNER","Creative Director")
+					+median-img("member9")
+					+media-conten("LOUISE ALASTRIONA","UI/UX Specialists")
+					+median-img("member10")
+		main.main-5
+			.container
+				.row
+					+sub-title("Our Best","Offers")
+					hr.separador-one
+					+order("50","20","10","20","100")
+					+order("50","20","10","20","100")
+					+order("50","20","10","20","100")
+					+order("50","20","10","20","100")
+		section.main-6
+			.container
+				.row
+					.col-sm-8
+						+sub-title("Contact","Us")
+						hr.separador-one
+						p Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+						input.w-100(type="text" placeholder="Name*")
+						input.w-100(type="text" placeholder="Email*") 
+						input.w-100(type="text" placeholder="Subject*")
+						textarea.w-100 Menssage*
+						a.btn-default(href="") SUBMIT
+
+					.col-sm-4.aside
+						h6.pd-50 CONTACT INFO
+						.pd-20
+							p 1455 19th St.
+							p Santa Monica, CA90404
+
+						h6 EMAIL:
+						h6 PHONE:
+							span +88 (0) 101 0000 000
+						h6 FAX: 
+							span +88 (0) 202 0000 001
+						h6.pd-10 CONNECT WITH US
+						.redes
+							a(href="")
+								span.social_facebook
+							a(href="")
+								span.social_twitter
+							a(href="")
+								span.social_googleplus
+							a(href="")
+								span.social_pinterest
+							a(href="")
+								span.social_linkedin
+							a(href="")
+								span.social_tumblr
+						.redes
+							a(href="")
+								span.social_wordpress
+							a(href="")
+								span.social_wordpress
+							a(href="")
+								span.social_share
+							a(href="")
+								span.social_vimeo
+							a(href="")
+								span.social_skype
+							a(href="")
+								span.social_googledrive
+
+						.h6		
+							+drown
+							span.fs-12 Our Company Mission
+						hr.separdor-two
+						.h6		
+							+drown
+							span.fs-12 Company Philosophy
+						hr.separador-two
+						.h6		
+							+drown
+							span.fs-12 Company Promise
+						hr.separdor-two
+
+
+		footer
+			.container
+				.row
+					.col-sm-4
+						+imagen-small("w-logo")
+					.col-sm-4.text-center.footer-text
+						p COPYRIGHT 2016 WILY LAB LIMITED
+						P DESIGED AND DEVELOPED BY 
+							span WILYLAB
+
+					.col-sm-4.text-right
+						a.red(href="")
+							span.social_facebook
+						a.red(href="")
+							span.social_twitter
+						a.red(href="")
+							span.social_googleplus
+						a.red(href="")
+							span.social_pinterest
+						
+
+		script(src='assets/js/jquery.js')
+		script(src='assets/js/bootstrap.min.js')
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+

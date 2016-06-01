@@ -1,0 +1,94 @@
+mixin imagen-small(imagen)
+	img(src="assets/images/" + imagen + ".jpg")
+mixin imagen(imagen)
+	img.w-100(src="assets/images/" + imagen + ".jpg")
+
+mixin imagen-png(imagen)
+	img(src="assets/images/" + imagen + ".png")
+
+mixin media(title, imagen)
+	.media
+		.media-left
+			+imagen-png(imagen)
+		.media-body
+			h6=title
+			p Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+
+mixin sub-title(title,title2)
+	h3.sub-title=title
+	h3.sub-title=title2
+
+mixin median-img(imagen)
+	.col-sm-3
+		.row
+			+imagen(imagen)
+
+mixin media-conten(title,title2)
+	.col-sm-3
+		.pl-5.pt-5.madia-conten
+			h6=title
+			p=title2
+			p Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+			a.red
+				span.social_facebook
+			a.red
+				span.social_twitter
+			a.red
+				span.social_googleplus
+			a.red
+				span.social_pinterest
+			a.red
+				span.social_linkedin
+
+mixin order(price,title,title1,title2,title3)
+	.col-sm-3.text-center
+		.row
+			.baground-gris
+				h4 Starter
+				h2 $
+					span.h2=price
+					span.h3 /mo
+				.col-6.border-lef
+					.row
+						+imagen-png("man88")
+						p=title
+							span USERS
+				.col-6
+					.row
+						+imagen-png("rectangles29")
+						p=title1
+							span PAGES
+				.col-6.border-top.border-left
+					.row
+						+imagen-png("database22")
+						p=title2
+							span GB STORAGE
+
+				.col-6.border-top
+					.row
+						+imagen-png("email162")
+						p=title3
+							span EMAILS
+			.order-now
+				a(href="") 
+					span ORDER NOW
+
+mixin drown
+	span.dropdown
+		button.btn.btn-mas.dropdown-toggle(type="button", id="dropdownMenu1" data-toggle="dropdown", aria-haspopup="true", aria-expanded="true")
+			span.arrow_carrot-down
+		ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+			li
+				a(href="index.html") important
+			li 
+				a(href="columnistas.html") other
+
+
+
+
+
+
+
+
+
+
